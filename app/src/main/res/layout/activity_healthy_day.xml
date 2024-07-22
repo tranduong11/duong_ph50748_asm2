@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.HealthyDayActivity">
+
+    <RelativeLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_healthyday"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/custom_color_blue"/>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_healthyday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_bottom"
+            android:background="@color/custom_color_blue"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_healthyday"
+            android:layout_above="@id/bottom_healthyday">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="30sp"
+                    android:textColor="@color/custom_color_blue"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+                <Button
+                    android:id="@+id/btnVanDong"
+                    android:layout_width="170dp"
+                    android:layout_height="90dp"
+                    android:text="Vận động"
+                    android:backgroundTint="#7AB1E4"
+                    android:textColor="#1E1E1E"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/icon_vandong"/>
+                <Button
+                    android:id="@+id/btnTinhThan"
+                    android:layout_width="170dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#7AB1E4"
+                    android:text="Tinh thần"
+                    android:textColor="#1E1E1E"
+                    android:layout_below="@id/tv1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/icon_tinhthan4"/>
+                <Button
+                    android:id="@+id/btnSucKhoe"
+                    android:layout_width="170dp"
+                    android:backgroundTint="#7AB1E4"
+                    android:layout_height="90dp"
+                    android:textColor="#1E1E1E"
+                    android:text="Sức khoẻ"
+                    android:layout_below="@id/btnVanDong"
+                    android:layout_marginLeft="20dp"
+                    android:right="@id/btnVanDong"
+                    android:drawableLeft="@drawable/icon_suckhoe"/>
+                <Button
+                    android:id="@+id/btnChuyenGia"
+                    android:layout_width="170dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#7AB1E4"
+                    android:textColor="#1E1E1E"
+                    android:text="Chuyên gia"
+                    android:layout_below="@id/btnTinhThan"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/icon_chuyengia"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSucKhoe"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/healthy"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv2"
+                    android:text=" App Healthy Day."
+                    android:layout_marginTop="-12dp"
+                    android:textSize="25sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#F10909"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/layout_header"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_drawer"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

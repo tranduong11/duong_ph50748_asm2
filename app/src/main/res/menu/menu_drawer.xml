@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chiTietSucKhoe"
+        android:icon="@drawable/img_favotrite"
+        android:title="Chi tiết sức khoẻ"/>
+    <item
+        android:id="@+id/IDYTe"
+        android:icon="@drawable/img_favotrite"
+        android:title="ID y tế"/>
+    <item
+        android:id="@+id/Thongbao"
+        android:icon="@drawable/icon_notifi"
+        android:title="Thông báo"/>
+
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Duong_ph50748_ASM_2</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="healthy">Hãy bảo vệ sức khỏe của bạn ngay bây giờ nếu không muốn sau này hối hận.Nếu chúng ta có sức khỏe thì chúng ta đã có tất cả rồi. Hãy bắt đầu theo dõi sức khỏe cùng với</string>
+    <string name="password">PassWord</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+</resources>

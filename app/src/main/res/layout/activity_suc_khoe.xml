@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".screen.SucKhoeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_SucKhoe"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/custom_color_blue"/>
+
+    <EditText
+        android:id="@+id/edtChieuCao_SucKhoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_SucKhoe"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#7AB1E4"
+        android:hint="Nhập chiều cao"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/edtCanNang_SucKhoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtChieuCao_SucKhoe"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:hint="Nhập cân nặng"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#7AB1E4"/>
+    <Button
+        android:id="@+id/btn_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉ số BMI"
+        android:padding="20dp"
+        android:layout_below="@id/edtCanNang_SucKhoe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#809AB1"
+        android:textColor="#1E0101"
+        android:textSize="20sp"/>
+</RelativeLayout>

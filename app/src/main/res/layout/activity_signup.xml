@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:background="@drawable/img1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screen.RegisterActivity">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/signup"
+            android:textSize="34sp"
+            android:layout_marginBottom="70dp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ĐĂNG KÍ TÀI KHOẢN"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#EC6519"-->
+<!--            android:textSize="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="70dp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv2"-->
+<!--            android:layout_below="@id/tv1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Chào mừng bạn đã trở lại,"-->
+<!--            android:textColor="#080D0C"-->
+<!--            android:textSize="20dp"-->
+<!--            android:gravity="center"/>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinput1"
+            app:boxBackgroundMode="none"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUserName_Register"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Username" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinput2"
+            android:layout_below="@id/textinput1"
+            app:boxBackgroundMode="none"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword_Register"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinput3"
+            android:layout_below="@id/textinput2"
+            app:boxBackgroundMode="none"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtRepassword_resigter"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Nhập lại password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnDangNhap_Register"
+            android:layout_width="match_parent"
+            android:layout_below="@id/textinput3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="SignUp"
+            android:textSize="20dp"
+            android:backgroundTint="#F32E2E"/>
+        <Button
+            android:id="@+id/btnTroLai"
+            android:layout_width="match_parent"
+            android:layout_below="@id/btnDangNhap_Register"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Back"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9E8F8A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:layout_below="@id/btnTroLai"/>
+    </RelativeLayout>
+
+</ScrollView>
